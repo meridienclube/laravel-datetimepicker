@@ -12,10 +12,10 @@ class DateTimePickerServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__ . '/../Views', 'datetimepicker');
         $this->publishes([
-            __DIR__ . '/../../public' => public_path('vendor'),
+            __DIR__ . '/../../public' => public_path(),
         ], 'cw_datetimepicker');
 
-        Form::component('bsText', 'vendor::components.form.datetimepicker', ['name', 'value' => null, 'attributes' => []]);
+        Form::component('datetimepicker', 'datetimepicker::components.form.datetimepicker', ['name', 'value' => null, 'attributes' => []]);
     }
 
     public function register()
