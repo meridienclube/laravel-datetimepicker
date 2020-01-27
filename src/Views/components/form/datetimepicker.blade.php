@@ -4,7 +4,7 @@
     <script>
         $('.cw_datetimepicker').datetimepicker({
             //timepicker:false,
-            mask:true, // '9999/19/39 29:59' - digit is the maximum possible for a cell
+            mask: true, // '9999/19/39 29:59' - digit is the maximum possible for a cell
             format:'d/m/Y H:i'
         });
     </script>
